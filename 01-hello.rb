@@ -5,4 +5,4 @@ your_name = gets
 
 # ...
 
-print "Hello, ", your_name
+puts "Hello, #{your_name}"
