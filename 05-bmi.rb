@@ -19,6 +19,6 @@ if bmi < 18.5
   puts "您的 BMI 结果是:过轻"
 elsif bmi >= 24
   puts "您的 BMI 结果是:过重"
-else ((18.5..24) === bmi)
+else 
   puts "您的 BMI 结果是:正常"
 end
