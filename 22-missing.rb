@@ -1,7 +1,13 @@
 # 给定一阵列内含数字，请输出 0~9 中不见的数字
 
 def find_missing(arr)
-  # ...
+  arr_missing = []
+  for i in 0..9
+    if !arr.include?(i)
+      arr_missing.push(i)
+    end
+  end
+  return arr_missing
 end
 
 answer = find_missing( [2,2,1,5,8,4] )

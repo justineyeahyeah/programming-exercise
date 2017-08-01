@@ -12,9 +12,21 @@ while (true)
   end
 end
 
+def sum(array)
+  sum = 0
+  array.each do |i|
+    sum+=i
+  end
+  return sum 
+end
+
+def avr(array)
+  sum(array) / array.size
+end
+
 puts arr.to_s
 
-puts "总和是 _____"
-puts "平均是 _____"
-puts "最大值是 _____"
-puts "最小值是 _____"
+puts "总和是 #{arr.sum}"
+puts "平均是 #{avr(arr)}"
+puts "最大值是 #{arr.max}"
+puts "最小值是 #{arr.min}"

@@ -5,6 +5,10 @@ arr = []
 print "请输入数字 N，然后按 Enter: "
 n = gets
 
-# ...
+i = 0
+while i <= (n.to_i - 1)
+  arr << (i * i)
+  i+=1 # 别忘了i递增
+end
 
 puts arr.to_s
