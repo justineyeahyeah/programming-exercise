@@ -26,8 +26,7 @@ while (true)
   elsif command == "save"
     File.open("todos.txt", "w+") do |f|
       todos.each do |todo|
-        f << todo
-        f << "\n"
+        f << todo + "\n"
       end
     end
 
